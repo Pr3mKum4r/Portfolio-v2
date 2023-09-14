@@ -1,12 +1,18 @@
+import { useEffect, useState } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
 const Timeline = ({ timeLineDataSet, workIcon, educationIcon, bgColor, educationDataSet}) => {
-    console.log("Hello");
-    console.log(timeLineDataSet);
+    const [dataSet1, setDataSet1] = useState([]);
+    const [dataSet2, setDataSet2] = useState([]);
+
+    useEffect(()=>{
+        setDataSet1(timeLineDataSet);
+        setDataSet2(educationDataSet);
+    }, [])
     return (
         <VerticalTimeline lineColor='#9CA3AF'>
-            {timeLineDataSet.map(timeLineData => (
+            {dataSet1.map(timeLineData => (
                 <VerticalTimelineElement
                     key={timeLineData.id}
                     className="vertical-timeline-element--work"
@@ -24,7 +30,7 @@ const Timeline = ({ timeLineDataSet, workIcon, educationIcon, bgColor, education
                     </p>
                 </VerticalTimelineElement>
             ))}
-            {educationDataSet.map(educationData => (
+            {dataSet2.map(educationData => (
                 <VerticalTimelineElement
                     key={educationData.id}
                     className="vertical-timeline-element--work"
