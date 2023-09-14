@@ -72,18 +72,21 @@ export default function Home() {
 
   const timeLineDataSet = [
     {
+      id: 1,
       date: "Jan 2023",
       heading: "VitrendzTech",
       subHeading: "Fullstack Web Developer",
       description: "Worked on Projects involving Reactjs, MaterialUI, ExpressJs, NodeJs, MongoDB, Firebase, Echarts."
     },
     {
+      id: 2,
       date: "Aug 2023 - Current",
       heading: "Clinigo",
       subHeading: "Backend Developer",
       description: "Working on developing a system to convert medical data to NRCES compliant FHIR format."
     },
     {
+      id: 3,
       date: "Aug 2023 - Current",
       heading: "Valsco Technology",
       subHeading: "Frontend Developer",
@@ -93,6 +96,7 @@ export default function Home() {
 
   const educationDataSet = [
     {
+      id: 4,
       date: "Sep 2021 - Jul 2025",
       heading: "Vellore Institute Of Technology, Vellore Campus",
       subHeading: "Grade: 9.54",

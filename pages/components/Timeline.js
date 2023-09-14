@@ -8,6 +8,7 @@ const Timeline = ({ timeLineDataSet, workIcon, educationIcon, bgColor, education
         <VerticalTimeline lineColor='#9CA3AF'>
             {timeLineDataSet.map(timeLineData => (
                 <VerticalTimelineElement
+                    key={timeLineData.id}
                     className="vertical-timeline-element--work"
                     date={timeLineData.date}
                     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff', }}
@@ -25,6 +26,7 @@ const Timeline = ({ timeLineDataSet, workIcon, educationIcon, bgColor, education
             ))}
             {educationDataSet.map(educationData => (
                 <VerticalTimelineElement
+                    key={educationData.id}
                     className="vertical-timeline-element--work"
                     date={educationData.date}
                     iconStyle={{ background: '#f50057', color: '#fff', }}
