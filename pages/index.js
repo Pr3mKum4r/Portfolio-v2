@@ -73,14 +73,14 @@ export default function Home() {
   const timeLineDataSet = [
     {
       id: 1,
-      date: "Aug 2023 - Current",
+      date: "Aug 2023 - Nov 2023",
       heading: "Clinigo",
       subHeading: "Backend Developer Intern",
       description: "Working on developing a system to convert medical data to NRCES compliant FHIR format."
     },
     {
       id: 2,
-      date: "Aug 2023 - Current",
+      date: "Aug 2023 - Sep 2023",
       heading: "Valsco Technology",
       subHeading: "Frontend Developer Intern",
       description: "Leading the team of Frontend Interns, developing frontend for clients using ReactJs, TailwindCSS, MaterialUI"
