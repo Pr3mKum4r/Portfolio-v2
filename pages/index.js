@@ -4,7 +4,7 @@ import { faLinkedin, faGithub, faYoutube } from '@fortawesome/free-brands-svg-ic
 import Image from 'next/image';
 import dp from '../public/profilepic1.jpeg';
 import memomate from '../public/memomate.png';
-import skilltrekker from '../public/SkillTrekker.jpg';
+import skilltrekker from '../public/SkillTrekker.png';
 import weatherapp from '../public/weatherapp.jpg';
 import Switcher from './Switcher.js';
 import { useState, useEffect } from 'react';
