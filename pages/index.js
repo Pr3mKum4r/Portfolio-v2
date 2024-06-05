@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import Image from 'next/image';
 import dp from '../public/profilepic1.jpeg';
+import terrachat from '../public/terrachat.png';
+import neuroassist from '../public/neuroassist.png'
 import memomate from '../public/memomate.png';
 import skilltrekker from '../public/SkillTrekker.png';
 import weatherapp from '../public/weatherapp.jpg';
@@ -19,6 +21,7 @@ import expressjs from '../public/expressjs.png';
 import mongodb from '../public/mongodb.png';
 import firebase from '../public/firebase.png';
 import flask from '../public/flask.png';
+import reactnative from '../public/react-native-1.svg';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Typewriter from 'typewriter-effect';
@@ -73,20 +76,27 @@ export default function Home() {
   const timeLineDataSet = [
     {
       id: 1,
+      date: "Dec 2023 - Current",
+      heading: "Vicuna Kouture",
+      subHeading: "Technical Head",
+      description: "Leading the technical team to develop cutting edge technologies"
+    },
+    {
+      id: 2,
       date: "Aug 2023 - Nov 2023",
       heading: "Clinigo",
       subHeading: "Backend Developer Intern",
       description: "Working on developing a system to convert medical data to NRCES compliant FHIR format."
     },
     {
-      id: 2,
+      id: 3,
       date: "Aug 2023 - Sep 2023",
       heading: "Valsco Technology",
       subHeading: "Frontend Developer Intern",
       description: "Leading the team of Frontend Interns, developing frontend for clients using ReactJs, TailwindCSS, MaterialUI"
     },
     {
-      id: 3,
+      id: 4,
       date: "Jan 2023",
       heading: "VitrendzTech",
       subHeading: "Fullstack Web Developer",
@@ -99,7 +109,7 @@ export default function Home() {
       id: 4,
       date: "Sep 2021 - Jul 2025",
       heading: "Vellore Institute Of Technology, Vellore Campus",
-      subHeading: "Grade: 9.54",
+      subHeading: "Grade: 9.55",
       description: "Pursuing Bachelors of Technology in Information Technology."
     }
   ];
@@ -162,7 +172,7 @@ export default function Home() {
               </div>
             </div>
             <div data-aos="fade-up" data-aos-duration="800">
-              <div className='bg-gray-100 dark:bg-transparent dark:bg-transparent shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-sky-400'>
+              <div className='bg-gray-100 dark:bg-transparent shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-sky-400'>
                 <Image src={react} alt='react' className='w-20 mx-auto my-1' />
                 <p className='font-poppins text-sky-400 py-1'>ReactJs</p>
               </div>
@@ -209,6 +219,12 @@ export default function Home() {
                 <p className='font-poppins text-black py-1'>Flask</p>
               </div>
             </div>
+            <div data-aos="fade-up" data-aos-duration="800">
+              <div className='bg-gray-100 dark:bg-transparent shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-sky-400'>
+                <Image src={reactnative} alt='flask' className='w-32 mb-2 mx-auto' />
+                {/* <p className='font-poppins text-sky-400 py-1'>React Native</p> */}
+              </div>
+            </div>
           </div>
         </section>
 
@@ -220,15 +236,53 @@ export default function Home() {
           <div className='flex flex-wrap gap-10 md:gap-5 justify-center'>
             {/* Card */}
             <div data-aos="fade-up" data-aos-duration="800">
-              <div className="hover:scale-105 duration-300 shadow-lg dark:shadow-slate-600 shadow-slate-800 max-w-sm md:max-w-xs mx-2 md:mx-1 my-2 md:my-5 lg:my-7 bg-white border border-gray-200 rounded-lg shadow dark:bg-cyan-500 dark:border-gray-700">
+              <div className="hover:scale-105 duration-300 shadow-lg dark:shadow-slate-600 shadow-slate-800 max-w-sm md:max-w-xs mx-2 md:mx-1 my-2 py-1 md:my-5 lg:my-7 bg-white border border-gray-200 rounded-lg shadow dark:bg-cyan-500 dark:border-gray-700">
+                <a href="https://neuroassist.vercel.app/" target='__blank'>
+                  <Image className="rounded-t-lg" src={neuroassist} alt="memomate" />
+                </a>
+                <div className="p-5">
+                  <a href="https://neuroassist.vercel.app/">
+                    <h5 className="font-robotoslab mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-cyan-1000">NeuroAssist: Neural Disorder Diagnosis</h5>
+                  </a>
+                  <p className="font-poppins mb-3 font-normal text-gray-700 dark:text-gray-800">NeuroAssist, leverages GenAI with ReactJS, TailwindCSS, Flask, and Intel ML libraries, enables early diagnosis of neural diseases in children like ADHD, OCD, and Dyslexia.</p>
+                  <a href="https://neuroassist.vercel.app/" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-cyan-500 rounded-lg hover:bg-cyan-600 focus:outline-none dark:bg-cyan-700 dark:hover:bg-cyan-800">
+                    Checkout
+                    <svg className="w-3 h-3 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="800">
+              <div className="hover:scale-105 duration-300 shadow-lg dark:shadow-slate-600 shadow-slate-800 max-w-sm md:max-w-xs mx-2 md:mx-1 my-2 py-1 md:my-5 lg:my-7 bg-white border border-gray-200 rounded-lg shadow dark:bg-cyan-500 dark:border-gray-700">
+                <a href="https://terrachat.vercel.app/" target='__blank'>
+                  <Image className="rounded-t-lg" src={terrachat} alt="memomate" />
+                </a>
+                <div className="p-5">
+                  <a href="https://terrachat.vercel.app/">
+                    <h5 className="font-robotoslab mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-cyan-1000">TerraChar: Multilingual Chat App</h5>
+                  </a>
+                  <p className="font-poppins mb-3 font-normal text-gray-700 dark:text-gray-800">TerraChat, built with ReactJS, TailwindCSS, and Azure Cognitive AI, uses an ExpressJS and Socket.IO backend with MongoDB and Prisma for real-time multilingual communication.</p>
+                  <a href="https://terrachat.vercel.app/" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-cyan-500 rounded-lg hover:bg-cyan-600 focus:outline-none dark:bg-cyan-700 dark:hover:bg-cyan-800">
+                    Checkout
+                    <svg className="w-3 h-3 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="800">
+              <div className="hover:scale-105 duration-300 shadow-lg dark:shadow-slate-600 shadow-slate-800 max-w-sm md:max-w-xs mx-2 md:mx-1 my-2 py-1 md:my-5 lg:my-7 bg-white border border-gray-200 rounded-lg shadow dark:bg-cyan-500 dark:border-gray-700">
                 <a href="https://skill-trekker.vercel.app">
                   <Image className="rounded-t-lg" src={skilltrekker} alt="skilltrekker" />
                 </a>
                 <div className="p-5">
                   <a href="https://skill-trekker.vercel.app">
-                    <h5 className="font-robotoslab mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-cyan-1000">SkillTrekker: A Roadmap website for tech domains you love !</h5>
+                    <h5 className="font-robotoslab mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-cyan-1000">SkillTrekker: A Roadmap webapp for tech domains</h5>
                   </a>
-                  <p className="font-poppins mb-3 font-normal text-gray-700 dark:text-gray-800">Developed Using ReactJs, MaterialUI, Firestore, EChartsJs and Firebase Authentication.</p>
+                  <p className="font-poppins mb-3 font-normal text-gray-700 dark:text-gray-800">Developed a web app with ReactJS, MaterialUI, and Firebase, providing technical roadmaps, storing user data with Firestore, and visualizing progress with ECharts.</p>
                   <a href="https://skill-trekker.vercel.app" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-cyan-500 rounded-lg hover:bg-cyan-600 focus:outline-none dark:bg-cyan-700 dark:hover:bg-cyan-800">
                     Checkout
                     <svg className="w-3 h-3 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
