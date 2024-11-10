@@ -2,7 +2,7 @@ import { Inter } from 'next/font/google'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import Image from 'next/image';
-import dp from '../public/profilepic1.jpeg';
+import dp from '../public/profiledp.jpeg';
 import terrachat from '../public/terrachat.png';
 import neuroassist from '../public/neuroassist.png'
 import memomate from '../public/memomate.png';
@@ -13,6 +13,7 @@ import { useState, useEffect } from 'react';
 import html5 from '../public/html.png';
 import css3 from '../public/css.png';
 import js from '../public/js.png';
+import ts from '../public/typescript.png';
 import react from '../public/react.png';
 import tailwind from '../public/tailwind.png';
 import mui from '../public/mui.png';
@@ -22,6 +23,8 @@ import mongodb from '../public/mongodb.png';
 import firebase from '../public/firebase.png';
 import flask from '../public/flask.png';
 import reactnative from '../public/react-native-1.svg';
+import sql from '../public/sql.png';
+import prisma from '../public/prisma-2.svg';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Typewriter from 'typewriter-effect';
@@ -76,10 +79,24 @@ export default function Home() {
   const timeLineDataSet = [
     {
       id: 1,
-      date: "Dec 2023 - Current",
+      date: "Apr 2024 - Jun 2024",
       heading: "Vicuna Kouture",
       subHeading: "Technical Head",
       description: "Leading the technical team to develop cutting edge technologies"
+    },
+    {
+      id: 1,
+      date: "Feb 2024 - Apr 2024",
+      heading: "Vicuna Kouture",
+      subHeading: "Fullstack Developer Intern",
+      description: "Developing fullstack solutions using MERN stack"
+    },
+    {
+      id: 1,
+      date: "Dec 2024 - Feb 2024",
+      heading: "Vicuna Kouture",
+      subHeading: "Frontend Developer Intern",
+      description: "Building client side solutions using React.js"
     },
     {
       id: 2,
@@ -97,7 +114,7 @@ export default function Home() {
     },
     {
       id: 4,
-      date: "Jan 2023",
+      date: "Jan 2023 - Aug 2023",
       heading: "VitrendzTech",
       subHeading: "Fullstack Web Developer",
       description: "Worked on Projects involving Reactjs, MaterialUI, ExpressJs, NodeJs, MongoDB, Firebase, Echarts."
@@ -109,7 +126,7 @@ export default function Home() {
       id: 4,
       date: "Sep 2021 - Jul 2025",
       heading: "Vellore Institute Of Technology, Vellore Campus",
-      subHeading: "Grade: 9.55",
+      subHeading: "Grade: 9.53",
       description: "Pursuing Bachelors of Technology in Information Technology."
     }
   ];
@@ -172,6 +189,12 @@ export default function Home() {
               </div>
             </div>
             <div data-aos="fade-up" data-aos-duration="800">
+              <div className='bg-gray-100 dark:bg-transparent shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-[#007acc]'>
+                <Image src={ts} alt='js' className='w-20 mx-auto mt-2 h-16 w-16' />
+                <p className='font-poppins text-[#007acc] py-1'>Typescript</p>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="800">
               <div className='bg-gray-100 dark:bg-transparent shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-sky-400'>
                 <Image src={react} alt='react' className='w-20 mx-auto my-1' />
                 <p className='font-poppins text-sky-400 py-1'>ReactJs</p>
@@ -205,6 +228,18 @@ export default function Home() {
               <div className='bg-gray-100 dark:bg-transparent shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-green-600'>
                 <Image src={mongodb} alt='mongodb' className='w-20 mx-auto' />
                 <p className='font-poppins text-green-600 py-1'>MongoDB</p>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="800">
+              <div className='bg-gray-100 dark:bg-transparent shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-[#007acc]'>
+                <Image src={sql} alt='mongodb' className='w-20 mx-auto' />
+                <p className='font-poppins text-[#007acc] py-1'>SQL</p>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="800">
+              <div className='bg-gray-100 dark:bg-transparent shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-[#10344c] dark:shadow-[#007acc]'>
+                <Image src={prisma} alt='mongodb' className='w-20 h-[5rem] mx-auto' />
+                <p className='font-poppins text-[#10344c] dark:text-[#007acc] py-1'>Prisma</p>
               </div>
             </div>
             <div data-aos="fade-up" data-aos-duration="800">
