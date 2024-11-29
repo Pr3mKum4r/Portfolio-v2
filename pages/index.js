@@ -146,15 +146,15 @@ export default function Home() {
             <Image src={dp} className='rounded-full' />
           </div>
           <div className='text-center p-1'>
-            <h2 className='font-robotoslab text-4xl py-3 text-teal-600 font-medium md:text-5xl'><Typewriter
+            <h2 className='font-robotoslab text-4xl py-3 text-teal-600 font-medium md:text-5xl'>Prem Kumar Singh</h2>
+            <h2 className='font-robotoslab text-3xl py-3 text-teal-700 font-medium md:text-4xl'><Typewriter
               options={{
-                strings: ['Prem Kumar Singh'],
+                strings: ['Fullstack Web Developer', 'App Developer', 'Machine Learning Enthusiast'],
                 autoStart: true,
                 loop: true,
                 pauseFor: 1500
               }}
             /></h2>
-            <h3 className='font-roboto text-2xl py-3 md:text-3xl dark:text-white'>Fullstack Web Developer</h3>
             <p className='font-josefin font-normal text-md py-5 leading-8 text-gray-800 dark:text-gray-400 md:text-xl max-w-xl mx-auto'>I'm a passionate MERN stack web developer. Explore my portfolio to see my latest projects and get in touch to discuss collaboration opportunities.</p>
           </div>
           <div className='text-3xl md:text-4xl py-5 flex justify-center gap-12'>
